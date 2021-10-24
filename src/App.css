@@ -1,0 +1,13 @@
+.postsList {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stories--list {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,75 @@
+.svg {
+  enable-background: new -580 439 577.9 194;
+}
+
+.story {
+  max-width: 600px;
+  max-height: 118px;
+  width: 495px;
+  display: flex;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  margin: 0px 0px 24px;
+  padding: 16px 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.user--story {
+  width: 66px;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.circle {
+  width: 66px;
+  height: 66px;
+  position: relative;
+}
+
+.circle svg {
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 3;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+
+.circle img {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -88;
+}
+
+.name--user {
+  color: #262626;
+  line-height: 16px;
+  max-width: 60px;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 15px;
+  margin-left: 9px;
+}
+
+@keyframes stroke-draw {
+  from {
+    stroke: #8a3ab9;
+    stroke-dasharray: 1;
+  }
+  to {
+    stroke: #cd486b;
+    transform: rotate(180deg);
+    stroke-dasharray: 8;
+  }
+}

@@ -21,6 +21,7 @@
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .circle {
@@ -57,9 +58,35 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 12px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 15px;
   margin-left: 9px;
+}
+
+.actionsStory .storyRight,
+.actionsStory .storyLeft{
+  position: absolute;
+  height: 75px;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.actionsStory .storyRight {
+  left: 82%;
+}
+
+.actionsStory .storyLeft {
+  right: 82%;
+}
+
+.storyLeft:hover, .storyRight:hover {
+  opacity: 1;
 }
 
 @keyframes stroke-draw {

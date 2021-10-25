@@ -1,10 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.css';
 
+import { FaChevronCircleRight, FaChevronCircleLeft } from 'react-icons/fa';
+
 function Stories() {
+
+  const [scrollX, setScrollX] = useState(0);
+
+  const handleLeftArrow = () => {
+    let width = 600;
+    let x = scrollX + Math.round(width / 2);
+    if (x > 0) {
+      x = 0;
+    }
+    setScrollX(x);
+  }
+
+  const handleRightArrow = () => {
+    let width = 600;
+    let x = scrollX - Math.round(width / 2);
+    let listWidth = 8 * 71.5;
+    if ((width - listWidth) > x) {
+      x = (width - listWidth) - 66;
+    }
+
+    setScrollX(x);
+  } 
+
+  const style = { color: "#262626", fontSize: "1.5em", ZIndex: 99, opacity: '0.5'};
+
   return (
     <div className="story">
-      <div className="user--story">
+
+      <div className="actionsStory">
+        <div className="storyLeft">
+          <FaChevronCircleLeft style={style} size={30} onClick={handleLeftArrow} />
+        </div>
+        
+        <div className="storyRight">
+          <FaChevronCircleRight style={style} size={30} onClick={handleRightArrow} />
+        </div>
+      </div>
+
+      <div className="user--story" style={{
+        marginLeft: scrollX,
+        width: 8 * 71.5
+      }}>
         <div className="circle">
           <img className="img--user--story" src="https://secure.gravatar.com/avatar/1115396d4dec662e739dd8ff1a7220e8?s=256&d=mm&r=g" alt="" />
           <svg className="svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve">

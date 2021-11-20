@@ -11,7 +11,7 @@ function Posts() {
           <div className="user">
             <div className="img--user">
               <div className="circle--user--storys--post">
-              <img src="https://lh3.googleusercontent.com/dSt8d_zjBF7HrAguVn_l9ix5XCO_FbTZYo5VVUfinWkp1kCfmDBfrL30P9v8gHcXJUn6=s85" alt="" />
+              <img src="https://secure.gravatar.com/avatar/1115396d4dec662e739dd8ff1a7220e8?s=256&d=mm&r=g" alt="" />
                 <svg className="svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve">
                   <defs>
                     <linearGradient id="gradientStoryUserPost" x1="0%" y1="0%" x2="0%" y2="100%">

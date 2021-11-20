@@ -25,21 +25,15 @@ function Stories() {
     }
 
     setScrollX(x);
-  } 
+  }
 
-  const style = { color: "#262626", fontSize: "1.5em", ZIndex: 99, opacity: '0.5'};
+  const style = { color: "#262626", fontSize: "1.5em", ZIndex: 99, opacity: '0.5' };
 
   return (
     <div className="story">
 
-      <div className="actionsStory">
-        <div className="storyLeft">
-          <FaChevronCircleLeft style={style} size={30} onClick={handleLeftArrow} />
-        </div>
-        
-        <div className="storyRight">
-          <FaChevronCircleRight style={style} size={30} onClick={handleRightArrow} />
-        </div>
+      <div className="storyLeft">
+        <FaChevronCircleLeft style={style} size={30} onClick={handleLeftArrow} />
       </div>
 
       <div className="user--story" style={{
@@ -187,6 +181,10 @@ function Stories() {
         <div className="name--user">
           <span>Fulano 1</span>
         </div>
+      </div>
+
+      <div className="storyRight">
+        <FaChevronCircleRight style={style} size={30} onClick={handleRightArrow} />
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ function Header() {
         </div>
         <div className="header__user">
           <a href="/">
-            <img src="https://lh3.googleusercontent.com/dSt8d_zjBF7HrAguVn_l9ix5XCO_FbTZYo5VVUfinWkp1kCfmDBfrL30P9v8gHcXJUn6=s85" alt="Usuário" />
+            <img src="https://secure.gravatar.com/avatar/1115396d4dec662e739dd8ff1a7220e8?s=256&d=mm&r=g" alt="Usuário" />
           </a>
         </div>
       </div>
